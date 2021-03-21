@@ -12,7 +12,7 @@ windbag = None
     async def on_ready(self):
         print('Beep boop I have started')      
 
-@commands.Cog.listener()
+@client.event
 async def on_message(self, message):
     if message.author != windbag and len(message.content) > WORD_COUNT:
         await message.channel.send("Sir this is a Wendy's")
