@@ -7,3 +7,5 @@ TOKEN = getenv('TOKEN')
 
 client = Wendy(WORD_COUNT)
 client.run(TOKEN)
+
+# should never get here
